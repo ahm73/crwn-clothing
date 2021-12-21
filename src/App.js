@@ -1,10 +1,13 @@
 import React from 'react';
 //import { Routes, Route } from 'react-router-dom';
-import { Switch, Route, Link } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
 
 import  HomePage  from './components/pages/homepage/homepage.component';
 import ShopPage from './components/pages/shop/shop.component';
+
+import Header from './components/header/header.component.jsx';
+
 
 // const ShopPage = () => {
 //   console.log("Shop page... function good")
@@ -51,6 +54,7 @@ function App() {
   //console.log("props: ", props)
   return (
     <div >
+      <Header />
       <Switch>
         <Route  exact path='/' component={HomePage} />
         <Route  path='/shop' component= { ShopPage } />
@@ -62,3 +66,25 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
+
+
+const App1 = ()=> {
+
+  return (
+    <Switch>
+      <div>
+        <Route excat path='/' component={HomePage} />
+        <Route path='/shop' component={ShopPage} />
+
+      </div>
+    </Switch>
+  )
+}
+
+
+

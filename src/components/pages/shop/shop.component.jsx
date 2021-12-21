@@ -8,7 +8,7 @@ import SHOP_DATA from './shop.data';
 class ShopPage extends Component {
     
     constructor(props){
-        
+        console.log("Props", props)
         super(props);
         
         this.state = {

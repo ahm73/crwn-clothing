@@ -1,5 +1,6 @@
 import React from 'react';
 
+// is a High Order Component
 import { withRouter } from 'react-router-dom';
 
 import './../menu-item/menu-item.styles.scss';
